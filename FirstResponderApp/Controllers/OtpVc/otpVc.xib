@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="otpVc" customModule="FirstResponderApp" customModuleProvider="target">
+            <connections>
+                <outlet property="fotterNoteLbl" destination="rsW-Di-rkd" id="4uA-E8-7pS"/>
+                <outlet property="langIcon" destination="PHN-6T-aly" id="XGQ-ts-Ckd"/>
+                <outlet property="otpTextField" destination="pFS-hD-eCr" id="HuZ-Yw-fQK"/>
+                <outlet property="resendCodeBtn" destination="0en-L5-hs1" id="B8f-N3-ixY"/>
+                <outlet property="verficationMsgLbl" destination="NuO-Os-b0K" id="Dbj-gK-jWP"/>
+                <outlet property="verifyBtn" destination="X4c-4C-tdb" id="lM5-lZ-kTx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBG" destination="RkN-cK-24l" id="PZV-fa-ClE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RkN-cK-24l">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderIcon" translatesAutoresizingMaskIntoConstraints="NO" id="PHN-6T-aly">
+                            <rect key="frame" x="105" y="100" width="180" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="180" id="IX8-eh-imN"/>
+                                <constraint firstAttribute="height" constant="120" id="SXd-ot-ibT"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4c-4C-tdb">
+                            <rect key="frame" x="15" y="371" width="360" height="50"/>
+                            <color key="backgroundColor" red="0.1333333333" green="0.32549019610000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="56d-yz-nDO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Verify"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="verfifyOtpBtnClick:" destination="-1" eventType="touchUpInside" id="NPd-h8-QVb"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© Alecom AB, All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsW-Di-rkd">
+                            <rect key="frame" x="20" y="785" width="350" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unL-FN-S17">
+                            <rect key="frame" x="15" y="296" width="360" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Enter 6 digits verification code" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pFS-hD-eCr">
+                                    <rect key="frame" x="10" y="5" width="342" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="CVQ-d6-sUY"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="3Tq-Uc-INU"/>
+                                <constraint firstItem="pFS-hD-eCr" firstAttribute="leading" secondItem="unL-FN-S17" secondAttribute="leading" constant="10" id="6hY-VH-ZbT"/>
+                                <constraint firstAttribute="trailing" secondItem="pFS-hD-eCr" secondAttribute="trailing" constant="8" id="8e8-ql-mRK"/>
+                                <constraint firstAttribute="bottom" secondItem="pFS-hD-eCr" secondAttribute="bottom" constant="5" id="GRj-6e-Tgv"/>
+                                <constraint firstItem="pFS-hD-eCr" firstAttribute="top" secondItem="unL-FN-S17" secondAttribute="top" constant="5" id="b0h-2k-mT4"/>
+                                <constraint firstItem="pFS-hD-eCr" firstAttribute="centerY" secondItem="unL-FN-S17" secondAttribute="centerY" id="pUJ-ww-ejk"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check your emails. A six-digit &quot;6&quot; verification code has been sent." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuO-Os-b0K">
+                            <rect key="frame" x="15" y="250" width="360" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0en-L5-hs1">
+                            <rect key="frame" x="15" y="431" width="360" height="50"/>
+                            <color key="backgroundColor" red="0.1333333333" green="0.32549019610000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="3um-8b-Rs2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Resend verification code"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="resendOtpBtnClick:" destination="-1" eventType="touchUpInside" id="tBO-iG-Zrv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dn-Kg-2Gs">
+                            <rect key="frame" x="10" y="65" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="J3N-VZ-2sk"/>
+                                <constraint firstAttribute="height" constant="35" id="VPH-iI-fHX"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="leftArrow">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                            </state>
+                            <connections>
+                                <action selector="backBtnClick:" destination="-1" eventType="touchUpInside" id="T6g-Q8-xA5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.096071235840000005" green="0.2396324873" blue="0.35309648510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="0en-L5-hs1" firstAttribute="leading" secondItem="RkN-cK-24l" secondAttribute="leading" constant="15" id="3o0-cH-Eng"/>
+                        <constraint firstAttribute="trailing" secondItem="0en-L5-hs1" secondAttribute="trailing" constant="15" id="6G2-08-Iby"/>
+                        <constraint firstAttribute="bottomMargin" secondItem="rsW-Di-rkd" secondAttribute="bottom" id="7F2-B5-cNN"/>
+                        <constraint firstItem="unL-FN-S17" firstAttribute="leading" secondItem="RkN-cK-24l" secondAttribute="leading" constant="15" id="8PB-hR-8bw"/>
+                        <constraint firstAttribute="trailing" secondItem="X4c-4C-tdb" secondAttribute="trailing" constant="15" id="8US-uR-A9k"/>
+                        <constraint firstItem="PHN-6T-aly" firstAttribute="centerX" secondItem="RkN-cK-24l" secondAttribute="centerX" id="8dx-R7-2b7"/>
+                        <constraint firstItem="rsW-Di-rkd" firstAttribute="leading" secondItem="RkN-cK-24l" secondAttribute="leading" constant="20" id="Eo3-NY-cPJ"/>
+                        <constraint firstItem="PHN-6T-aly" firstAttribute="top" secondItem="RkN-cK-24l" secondAttribute="top" constant="100" id="FAp-qs-v3c"/>
+                        <constraint firstItem="X4c-4C-tdb" firstAttribute="leading" secondItem="RkN-cK-24l" secondAttribute="leading" constant="15" id="FTX-s7-u4E"/>
+                        <constraint firstItem="unL-FN-S17" firstAttribute="top" secondItem="NuO-Os-b0K" secondAttribute="bottom" constant="10" id="Gtl-OI-t9Q"/>
+                        <constraint firstItem="X4c-4C-tdb" firstAttribute="top" secondItem="unL-FN-S17" secondAttribute="bottom" constant="25" id="HaT-hM-bF9"/>
+                        <constraint firstItem="0en-L5-hs1" firstAttribute="top" secondItem="X4c-4C-tdb" secondAttribute="bottom" constant="10" id="Lsi-tV-0af"/>
+                        <constraint firstAttribute="trailing" secondItem="unL-FN-S17" secondAttribute="trailing" constant="15" id="TD3-tf-wt8"/>
+                        <constraint firstAttribute="trailing" secondItem="rsW-Di-rkd" secondAttribute="trailing" constant="20" id="Tbw-WV-FeC"/>
+                        <constraint firstItem="NuO-Os-b0K" firstAttribute="top" secondItem="PHN-6T-aly" secondAttribute="bottom" constant="30" id="UH9-Fk-TRc"/>
+                        <constraint firstAttribute="trailing" secondItem="NuO-Os-b0K" secondAttribute="trailing" constant="15" id="VOq-LT-kYU"/>
+                        <constraint firstItem="5dn-Kg-2Gs" firstAttribute="top" secondItem="RkN-cK-24l" secondAttribute="topMargin" constant="10" id="cva-Bi-R1A"/>
+                        <constraint firstItem="5dn-Kg-2Gs" firstAttribute="leading" secondItem="RkN-cK-24l" secondAttribute="leading" constant="10" id="vIN-vM-eAQ"/>
+                        <constraint firstItem="NuO-Os-b0K" firstAttribute="leading" secondItem="RkN-cK-24l" secondAttribute="leading" constant="15" id="zQ9-QD-vap"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RkN-cK-24l" secondAttribute="trailing" id="ZZv-e7-691"/>
+                <constraint firstItem="RkN-cK-24l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="clU-7i-P9v"/>
+                <constraint firstAttribute="bottom" secondItem="RkN-cK-24l" secondAttribute="bottom" id="ikT-o4-F7H"/>
+                <constraint firstItem="RkN-cK-24l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rMz-Qc-pYt"/>
+            </constraints>
+            <point key="canvasLocation" x="86" y="-33"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HeaderIcon" width="1080" height="750"/>
+        <image name="leftArrow" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

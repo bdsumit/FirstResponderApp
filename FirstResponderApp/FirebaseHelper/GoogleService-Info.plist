@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>205312620295-i10lrcfp4g3iv1m4cjvd5namc5q0hqnv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.205312620295-i10lrcfp4g3iv1m4cjvd5namc5q0hqnv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC5BpKO6I5PjSoDfxgMeANiSGmfyW0haic</string>
+	<key>GCM_SENDER_ID</key>
+	<string>205312620295</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.alitis.firstresponder.alitisNative</string>
+	<key>PROJECT_ID</key>
+	<string>alitiscloudapps</string>
+	<key>STORAGE_BUCKET</key>
+	<string>alitiscloudapps.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:205312620295:ios:81ecf131c80ef2fe9df7a2</string>
+</dict>
+</plist>

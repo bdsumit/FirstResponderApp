@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="MissionDetailTvCell" customModule="FirstResponderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZND-AD-XU6">
+                        <rect key="frame" x="25" y="10" width="296" height="51"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="L0m-ut-UVd">
+                                <rect key="frame" x="10" y="8" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="mpR-7W-VtV"/>
+                                    <constraint firstAttribute="height" constant="35" id="u0p-4u-qFO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pr5-EA-T82">
+                                <rect key="frame" x="55" y="15" width="216" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="pr5-EA-T82" secondAttribute="bottom" constant="15" id="0Va-vw-QxT"/>
+                            <constraint firstAttribute="trailing" secondItem="pr5-EA-T82" secondAttribute="trailing" constant="25" id="VdS-PP-9VX"/>
+                            <constraint firstItem="L0m-ut-UVd" firstAttribute="leading" secondItem="ZND-AD-XU6" secondAttribute="leading" constant="10" id="Zna-wy-e93"/>
+                            <constraint firstItem="L0m-ut-UVd" firstAttribute="centerY" secondItem="pr5-EA-T82" secondAttribute="centerY" id="dqs-KA-yIX"/>
+                            <constraint firstItem="pr5-EA-T82" firstAttribute="top" secondItem="ZND-AD-XU6" secondAttribute="top" constant="15" id="jWc-pp-Kkl"/>
+                            <constraint firstItem="pr5-EA-T82" firstAttribute="leading" secondItem="L0m-ut-UVd" secondAttribute="trailing" constant="10" id="tRr-Ol-TRd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ZND-AD-XU6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0Rq-Td-FIA"/>
+                    <constraint firstAttribute="trailing" secondItem="ZND-AD-XU6" secondAttribute="trailing" constant="25" id="6K5-QE-8iw"/>
+                    <constraint firstAttribute="bottom" secondItem="ZND-AD-XU6" secondAttribute="bottom" constant="10" id="GOb-b8-1lm"/>
+                    <constraint firstItem="ZND-AD-XU6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="GmA-ZY-1Fo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="icon" destination="L0m-ut-UVd" id="6H4-G6-xQp"/>
+                <outlet property="textLbl" destination="pr5-EA-T82" id="pEb-qP-CWl"/>
+            </connections>
+            <point key="canvasLocation" x="49.230769230769226" y="2.4881516587677726"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check" width="30" height="30"/>
+    </resources>
+</document>

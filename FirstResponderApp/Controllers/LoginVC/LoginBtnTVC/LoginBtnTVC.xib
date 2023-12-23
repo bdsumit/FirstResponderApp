@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="202" id="KGk-i7-Jjw" customClass="LoginBtnTVC" customModule="FirstResponderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="202"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="202"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA7-Qs-geG">
+                        <rect key="frame" x="15" y="75" width="306" height="50"/>
+                        <color key="backgroundColor" red="0.13450482489999999" green="0.32442808150000002" blue="0.4734768271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="1da-t1-ofh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="15"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Forgot Password"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="forgotPasswordBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5gp-4T-cIR"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xge-db-7HN">
+                        <rect key="frame" x="15" y="135" width="306" height="50"/>
+                        <color key="backgroundColor" red="0.13450482489999999" green="0.32442808150000002" blue="0.4734768271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="eU3-h2-PMF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="15"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Register"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="contactSupportBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qv5-2H-xWF"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBu-YL-UGn">
+                        <rect key="frame" x="15" y="15" width="306" height="50"/>
+                        <color key="backgroundColor" red="0.13450482489999999" green="0.32442808150000002" blue="0.4734768271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="JgN-dj-ILU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="15"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="LogIn"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="loginBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="729-QQ-Ebc"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="LBu-YL-UGn" secondAttribute="trailing" constant="15" id="5RB-dQ-Vl2"/>
+                    <constraint firstItem="PA7-Qs-geG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ICE-Pp-xyf"/>
+                    <constraint firstAttribute="trailing" secondItem="xge-db-7HN" secondAttribute="trailing" constant="15" id="MSD-u0-vF4"/>
+                    <constraint firstItem="LBu-YL-UGn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="dRL-Ig-9AF"/>
+                    <constraint firstItem="xge-db-7HN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="hlw-3O-pkP"/>
+                    <constraint firstAttribute="bottom" secondItem="xge-db-7HN" secondAttribute="bottom" constant="7" id="m2e-ki-Z8l"/>
+                    <constraint firstAttribute="trailing" secondItem="PA7-Qs-geG" secondAttribute="trailing" constant="15" id="of1-oq-Zrx"/>
+                    <constraint firstItem="LBu-YL-UGn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ovn-yY-Pup"/>
+                    <constraint firstItem="xge-db-7HN" firstAttribute="top" secondItem="PA7-Qs-geG" secondAttribute="bottom" constant="10" id="vqs-Y3-P60"/>
+                    <constraint firstItem="PA7-Qs-geG" firstAttribute="top" secondItem="LBu-YL-UGn" secondAttribute="bottom" constant="10" id="yvg-TO-uWp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="contactBtn" destination="xge-db-7HN" id="V0t-Sj-Tf9"/>
+                <outlet property="forgotBtn" destination="PA7-Qs-geG" id="baT-IK-6KL"/>
+                <outlet property="loginBTN" destination="LBu-YL-UGn" id="EIr-B3-khq"/>
+            </connections>
+            <point key="canvasLocation" x="143.47826086956522" y="-86.383928571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="226" id="KGk-i7-Jjw" customClass="DescriptionTVC" customModule="FirstResponderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="226"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="226"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TB3-ez-2xa">
+                        <rect key="frame" x="20" y="10" width="312" height="16"/>
+                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRb-OX-e2Y">
+                        <rect key="frame" x="20" y="36" width="302" height="180"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtD-w5-bVv">
+                                <rect key="frame" x="10" y="169" width="282" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="FAT-4N-vaa"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MvK-xM-NIS">
+                                <rect key="frame" x="8" y="8" width="286" height="151"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" red="0.60392156860000001" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gtD-w5-bVv" secondAttribute="trailing" constant="10" id="BbK-HM-U6o"/>
+                            <constraint firstAttribute="height" constant="180" id="HlK-3m-NkU"/>
+                            <constraint firstAttribute="bottom" secondItem="gtD-w5-bVv" secondAttribute="bottom" constant="10" id="VcM-tS-EpJ"/>
+                            <constraint firstItem="gtD-w5-bVv" firstAttribute="top" secondItem="MvK-xM-NIS" secondAttribute="bottom" constant="10" id="iyf-KQ-2y7"/>
+                            <constraint firstItem="gtD-w5-bVv" firstAttribute="leading" secondItem="kRb-OX-e2Y" secondAttribute="leading" constant="10" id="jCi-7P-otQ"/>
+                            <constraint firstItem="MvK-xM-NIS" firstAttribute="leading" secondItem="kRb-OX-e2Y" secondAttribute="leading" constant="8" id="jXV-2k-uMm"/>
+                            <constraint firstItem="MvK-xM-NIS" firstAttribute="top" secondItem="kRb-OX-e2Y" secondAttribute="top" constant="8" id="tI4-Rk-o7p"/>
+                            <constraint firstAttribute="trailing" secondItem="MvK-xM-NIS" secondAttribute="trailing" constant="8" id="tgB-ca-P9c"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TB3-ez-2xa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0Km-DC-kiS"/>
+                    <constraint firstItem="kRb-OX-e2Y" firstAttribute="top" secondItem="TB3-ez-2xa" secondAttribute="bottom" constant="10" id="7Qw-X7-bVp"/>
+                    <constraint firstItem="TB3-ez-2xa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="El9-vc-y6g"/>
+                    <constraint firstAttribute="bottom" secondItem="kRb-OX-e2Y" secondAttribute="bottom" constant="10" id="F5j-8D-Cjz"/>
+                    <constraint firstAttribute="trailing" secondItem="kRb-OX-e2Y" secondAttribute="trailing" constant="20" id="FhH-hD-WFP"/>
+                    <constraint firstItem="kRb-OX-e2Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="LQo-BF-TeR"/>
+                    <constraint firstAttribute="trailing" secondItem="TB3-ez-2xa" secondAttribute="trailing" constant="10" id="pIC-jV-Nty"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="descriptionLbl" destination="TB3-ez-2xa" id="XFd-4h-Uos"/>
+                <outlet property="descriptionTextView" destination="MvK-xM-NIS" id="NTc-OC-UwU"/>
+                <outlet property="heightConstraint" destination="HlK-3m-NkU" id="hcz-2x-N7A"/>
+                <outlet property="leadingConstraint" destination="LQo-BF-TeR" id="drH-RU-uCR"/>
+                <outlet property="trallingConstraint" destination="FhH-hD-WFP" id="sJo-Lw-gHX"/>
+            </connections>
+            <point key="canvasLocation" x="147.82608695652175" y="91.741071428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

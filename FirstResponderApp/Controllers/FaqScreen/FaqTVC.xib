@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="83" id="KGk-i7-Jjw" customClass="FaqTVC" customModule="FirstResponderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="444" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="806-7p-fUT">
+                        <rect key="frame" x="0.0" y="0.0" width="444" height="83"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqu-l8-K9F">
+                                <rect key="frame" x="20" y="10.000000000000002" width="404" height="17.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZg-B4-jKZ">
+                                <rect key="frame" x="20" y="71" width="404" height="2"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="DCD-6l-R3f"/>
+                                </constraints>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8n-xs-Bm4">
+                                <rect key="frame" x="20" y="37.666666666666664" width="404" height="17.666666666666664"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <wkWebView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBO-KR-AD0">
+                                <rect key="frame" x="20" y="10" width="404" height="63"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="ijA-V0-pU4"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZBO-KR-AD0" firstAttribute="top" secondItem="806-7p-fUT" secondAttribute="top" constant="10" id="4B4-Qy-ttK"/>
+                            <constraint firstItem="Q8n-xs-Bm4" firstAttribute="top" secondItem="pqu-l8-K9F" secondAttribute="bottom" constant="10" id="7sW-qh-USr"/>
+                            <constraint firstAttribute="trailing" secondItem="ZBO-KR-AD0" secondAttribute="trailing" constant="20" id="8Y8-3W-Wbl"/>
+                            <constraint firstItem="ZBO-KR-AD0" firstAttribute="leading" secondItem="806-7p-fUT" secondAttribute="leading" constant="20" id="FXd-kk-Hdz"/>
+                            <constraint firstAttribute="trailing" secondItem="ZZg-B4-jKZ" secondAttribute="trailing" constant="20" id="Ko2-Xy-hG6"/>
+                            <constraint firstItem="ZZg-B4-jKZ" firstAttribute="leading" secondItem="806-7p-fUT" secondAttribute="leading" constant="20" id="NWW-KI-hvt"/>
+                            <constraint firstItem="pqu-l8-K9F" firstAttribute="top" secondItem="806-7p-fUT" secondAttribute="top" constant="10" id="OvY-H8-Sji"/>
+                            <constraint firstItem="Q8n-xs-Bm4" firstAttribute="leading" secondItem="806-7p-fUT" secondAttribute="leading" constant="20" id="XEc-T1-uaw"/>
+                            <constraint firstItem="pqu-l8-K9F" firstAttribute="leading" secondItem="806-7p-fUT" secondAttribute="leading" constant="20" id="gfV-6n-Wdi"/>
+                            <constraint firstAttribute="trailing" secondItem="Q8n-xs-Bm4" secondAttribute="trailing" constant="20" id="iex-Xu-Vkg"/>
+                            <constraint firstAttribute="bottom" secondItem="ZBO-KR-AD0" secondAttribute="bottom" constant="10" id="omo-3h-6qu"/>
+                            <constraint firstAttribute="bottom" secondItem="ZZg-B4-jKZ" secondAttribute="bottom" constant="10" id="utq-ds-uId"/>
+                            <constraint firstAttribute="trailing" secondItem="pqu-l8-K9F" secondAttribute="trailing" constant="20" id="zPw-A6-tKC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="806-7p-fUT" secondAttribute="trailing" id="AOs-hU-9pY"/>
+                    <constraint firstItem="806-7p-fUT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IEn-Fc-vMM"/>
+                    <constraint firstItem="806-7p-fUT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SOB-5T-S5B"/>
+                    <constraint firstAttribute="bottom" secondItem="806-7p-fUT" secondAttribute="bottom" id="mO4-Hp-FUn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="AnswerLbl" destination="Q8n-xs-Bm4" id="5Qt-dE-aoQ"/>
+                <outlet property="QuestionLbl" destination="pqu-l8-K9F" id="int-0b-coz"/>
+                <outlet property="QuestionWebKit" destination="ZBO-KR-AD0" id="1pX-1S-cAh"/>
+                <outlet property="webViewHeightConstraint" destination="ijA-V0-pU4" id="b7U-qt-3qg"/>
+            </connections>
+            <point key="canvasLocation" x="110.76923076923076" y="0.35545023696682465"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

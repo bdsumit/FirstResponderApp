@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="SettingTableViewCell" customModule="FirstResponderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzN-Hq-6P0">
+                        <rect key="frame" x="25" y="0.0" width="285" height="64"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEV-gF-oFV">
+                                <rect key="frame" x="0.0" y="15" width="225" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLg-5U-xEx">
+                                <rect key="frame" x="255" y="17" width="30" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="forwardarrow"/>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBS-mz-6FL">
+                                <rect key="frame" x="235" y="16.666666666666671" width="52" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="JLc-QD-Un2"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="switchBtnPressed:" destination="KGk-i7-Jjw" eventType="valueChanged" id="BRU-sz-nP1"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0V-dc-gmw">
+                                <rect key="frame" x="0.0" y="63" width="285" height="1"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="TS4-bp-Qx7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DEV-gF-oFV" secondAttribute="bottom" constant="15" id="1E7-8l-NNW"/>
+                            <constraint firstItem="DLg-5U-xEx" firstAttribute="centerY" secondItem="DEV-gF-oFV" secondAttribute="centerY" id="CsT-e9-T3E"/>
+                            <constraint firstItem="V0V-dc-gmw" firstAttribute="leading" secondItem="zzN-Hq-6P0" secondAttribute="leading" id="DVC-Y2-F4p"/>
+                            <constraint firstItem="DEV-gF-oFV" firstAttribute="top" secondItem="zzN-Hq-6P0" secondAttribute="top" constant="15" id="KAi-FU-Ekp"/>
+                            <constraint firstItem="DEV-gF-oFV" firstAttribute="leading" secondItem="zzN-Hq-6P0" secondAttribute="leading" id="LNL-hw-7hu"/>
+                            <constraint firstAttribute="trailing" secondItem="V0V-dc-gmw" secondAttribute="trailing" id="PQ3-qH-YWu"/>
+                            <constraint firstItem="ZBS-mz-6FL" firstAttribute="leading" secondItem="DEV-gF-oFV" secondAttribute="trailing" constant="10" id="Qfg-u5-qh4"/>
+                            <constraint firstItem="ZBS-mz-6FL" firstAttribute="centerY" secondItem="DEV-gF-oFV" secondAttribute="centerY" id="UhE-gN-EOw"/>
+                            <constraint firstAttribute="trailing" secondItem="ZBS-mz-6FL" secondAttribute="trailing" id="fRl-4q-4ut"/>
+                            <constraint firstAttribute="trailing" secondItem="DLg-5U-xEx" secondAttribute="trailing" id="jjM-wD-nuf"/>
+                            <constraint firstAttribute="bottom" secondItem="V0V-dc-gmw" secondAttribute="bottom" id="qnI-Qb-JkD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="zzN-Hq-6P0" secondAttribute="bottom" id="3ZA-t4-YQi"/>
+                    <constraint firstItem="zzN-Hq-6P0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Yow-YL-Dx2"/>
+                    <constraint firstItem="zzN-Hq-6P0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="dcy-aN-1B9"/>
+                    <constraint firstAttribute="trailing" secondItem="zzN-Hq-6P0" secondAttribute="trailing" constant="25" id="rQw-td-yht"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="forwardBtn" destination="DLg-5U-xEx" id="WVf-Za-OEM"/>
+                <outlet property="sepratorView" destination="V0V-dc-gmw" id="XEa-a8-Zcm"/>
+                <outlet property="settingTxt" destination="DEV-gF-oFV" id="xdB-Ao-AMQ"/>
+                <outlet property="switchCase" destination="ZBS-mz-6FL" id="Ujl-6Z-eac"/>
+            </connections>
+            <point key="canvasLocation" x="8.4615384615384617" y="-26.303317535545023"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="forwardarrow" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

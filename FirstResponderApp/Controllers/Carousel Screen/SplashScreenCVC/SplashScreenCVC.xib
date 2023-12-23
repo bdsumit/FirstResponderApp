@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SplashScreenCVC" customModule="FirstResponderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="359"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="359"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PsL-Gz-1kw">
+                        <rect key="frame" x="5" y="296" width="326" height="61"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="249" text="Test Carousal Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tw0-ku-mUE">
+                                <rect key="frame" x="48" y="0.0" width="230.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Test Carousal Setting Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2va-5H-vJR">
+                                <rect key="frame" x="36.5" y="41.5" width="253" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </stackView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="phone3" translatesAutoresizingMaskIntoConstraints="NO" id="niD-9q-GNk">
+                        <rect key="frame" x="5" y="10" width="326" height="220"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="220" id="p6D-L8-JkY"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="PsL-Gz-1kw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="PKs-Bg-pSo"/>
+                <constraint firstAttribute="trailing" secondItem="PsL-Gz-1kw" secondAttribute="trailing" constant="5" id="bph-dP-Unx"/>
+                <constraint firstItem="niD-9q-GNk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="i8I-ci-C7p"/>
+                <constraint firstItem="niD-9q-GNk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="rDa-kf-xAa"/>
+                <constraint firstAttribute="trailing" secondItem="niD-9q-GNk" secondAttribute="trailing" constant="5" id="xUs-4q-agD"/>
+                <constraint firstAttribute="bottom" secondItem="PsL-Gz-1kw" secondAttribute="bottom" constant="2" id="xmS-r9-CbD"/>
+                <constraint firstItem="PsL-Gz-1kw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="niD-9q-GNk" secondAttribute="bottom" constant="10" id="zv6-cy-QgO"/>
+            </constraints>
+            <size key="customSize" width="336" height="359"/>
+            <connections>
+                <outlet property="headingLbl" destination="tw0-ku-mUE" id="kch-vo-KOn"/>
+                <outlet property="imgView" destination="niD-9q-GNk" id="12E-FD-VKz"/>
+                <outlet property="subHeadingLbl" destination="2va-5H-vJR" id="vTw-ob-a98"/>
+            </connections>
+            <point key="canvasLocation" x="201.44927536231884" y="-104.12946428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="phone3" width="275" height="183"/>
+    </resources>
+</document>
